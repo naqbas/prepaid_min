@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+  <script type="module" src="./Процесс по открытию предоплаченных карт_files/client"></script>
+
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABQUlEQVR4AaTSAUdDURjG8efdDlQrfYgQQKACUAJBAASiLxCEoGkA9QX6DPUBkiESSFumALpsUUIt273n3nvP24PLjmNy2Z+fF/HkzsGsGZQd3Wyv82zSIjVozvt7QQmN6Zfe6Opi51YNJu3RMar1SNekNUzKUL0cZTMP+J9g4RUnhQ4+EsGUhAP0/0BinUb9WFSBMOc059FwYASvpYaRjbVlh6BRXOjz6zB1DggHBqQkhHpdZGHeCIKcQgH56rU6Gv6IEVlUSAQvKDPBQJ9Wyu+ETR3C0sxZU5c2yoTgvcYTnjOS72Hmnno/NVWE3Suw1W12LJghv0vap1VVIC8UwcCYTnutrp32kMC3/clzQO8UllKT2oRwwB954NnNc3fHm5FSRId0zv/u/kRUWrXvNeXQqdF3A+JoIBbHpQ4ggAADAEjlgSwJE9GuAAAAAElFTkSuQmCC">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Процесс по открытию предоплаченных карт</title>
+  <link href="./Процесс по открытию предоплаченных карт_files/css2" rel="stylesheet">
+<style type="text/css" data-vite-dev-id="C:/Users/Ислам/Desktop/prepaid minimum/prepaid/src/index.css">/*
+! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.my-\[100px\] {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+.mr-16 {
+  margin-right: 4rem;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.mr-3 {
+  margin-right: 0.75rem;
+}
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
+}
+.mt-5 {
+  margin-top: 1.25rem;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
+.flex {
+  display: flex;
+}
+.table {
+  display: table;
+}
+.hidden {
+  display: none;
+}
+.h-auto {
+  height: auto;
+}
+.w-1\/2 {
+  width: 50%;
+}
+.w-1\/3 {
+  width: 33.333333%;
+}
+.w-1\/4 {
+  width: 25%;
+}
+.w-2\/5 {
+  width: 40%;
+}
+.w-3\/5 {
+  width: 60%;
+}
+.w-52 {
+  width: 13rem;
+}
+.w-\[90\%\] {
+  width: 90%;
+}
+.w-full {
+  width: 100%;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-4 {
+  gap: 1rem;
+}
+.gap-5 {
+  gap: 1.25rem;
+}
+.gap-7 {
+  gap: 1.75rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.rounded-\[20px\] {
+  border-radius: 20px;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-b-2xl {
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.rounded-t-2xl {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.rounded-br-\[70px\] {
+  border-bottom-right-radius: 70px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-t {
+  border-top-width: 1px;
+}
+.bg-\[\#2a8640\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 134 64 / var(--tw-bg-opacity));
+}
+.bg-\[\#d9dcf8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 220 248 / var(--tw-bg-opacity));
+}
+.bg-\[\#e5e7eb\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+.bg-\[\#f5f6f7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 246 247 / var(--tw-bg-opacity));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.p-1 {
+  padding: 0.25rem;
+}
+.p-2 {
+  padding: 0.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-\[0\.125rem\] {
+  padding: 0.125rem;
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.py-\[100px\] {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+.pb-20 {
+  padding-bottom: 5rem;
+}
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+.pl-2 {
+  padding-left: 0.5rem;
+}
+.pr-2 {
+  padding-right: 0.5rem;
+}
+.pt-10 {
+  padding-top: 2.5rem;
+}
+.pt-2 {
+  padding-top: 0.5rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+.text-\[\#5c5c5c\] {
+  --tw-text-opacity: 1;
+  color: rgb(92 92 92 / var(--tw-text-opacity));
+}
+.text-\[\#939393\] {
+  --tw-text-opacity: 1;
+  color: rgb(147 147 147 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.underline {
+  text-decoration-line: underline;
+}
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+html {
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    width: 100vw;
+}
+
+* {
+    /* border: 1px solid #000; */
+}
+
+.activeTab {
+    background-color: #2a8640 !important;
+    color: #fff !important;
+}
+
+.answer {
+    display: block;
+}
+
+.svgRotate {
+    transform: rotate(180deg);
+}
+
+.question svg {
+    transition: transform 0.5s;
+}
+
+.lightButton {
+    background-color: #2a8640;
+}
+
+.dark\:bg-\[\#1a1a1a\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 26 26 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-\[\#282828\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-\[\#2a8640\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 134 64 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-\[\#2b2f4c\]:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(43 47 76 / var(--tw-bg-opacity));
+}
+
+.dark\:text-white:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}</style></head>
+
+<body>
+  <div id="root"><div><header class="flex justify-between items-center text-lg p-2 dark:bg-[#1a1a1a] dark:text-white"><div><a href="http://localhost:5173/#"><svg width="126" height="56" fill="none" xmlns="http://www.w3.org/2000/svg" class="css-ucmrs6"><path d="M25.9773 43C25.9773 43 13 39.1812 13 20.2492V13H38.9547V20.2492C38.9547 38.4693 25.9773 43 25.9773 43Z" fill="#50AE3D"></path><path d="M33.4855 20.3138H23.0325V26.3332H33.4855V28.1455C33.4855 31.1876 32.6118 33.6471 28.0163 33.6471H23.0325V41.5759C24.7477 42.6439 25.9775 42.9998 25.9775 42.9998C25.9775 42.9998 38.9548 38.4691 38.9548 20.249V14.7798C38.9548 17.8219 37.6279 20.249 33.4855 20.3138Z" fill="#0E5430"></path><path d="M46.1716 30.8315H48.8577C50.314 30.8315 51.3496 31.4788 51.3496 32.7409C51.3496 33.3558 51.0584 33.9707 50.5082 34.2943V34.3267C51.3496 34.5856 51.6409 35.3299 51.6409 35.9772C51.6409 37.5629 50.314 38.1455 48.8577 38.1455H46.1716V30.8315ZM48.8901 33.6471C49.3431 33.6471 49.5373 33.3235 49.5373 32.9675C49.5373 32.6438 49.3432 32.3526 48.8577 32.3526H47.9839V33.6471H48.8901ZM49.0195 36.5921C49.5373 36.5921 49.7962 36.2361 49.7962 35.8154C49.7962 35.3946 49.5373 35.071 49.0195 35.071H47.9516V36.5921H49.0195Z" fill="currentColor"></path><path d="M54.3917 30.8315H56.2687L58.7606 38.1131H56.916L56.4629 36.5921H54.1975L53.7444 38.1131H51.8998L54.3917 30.8315ZM56.0422 35.1681L55.6215 33.7442C55.492 33.2911 55.3302 32.482 55.3302 32.482H55.2978C55.2978 32.482 55.136 33.2911 55.0066 33.7442L54.5859 35.1681H56.0422Z" fill="currentColor"></path><path d="M59.4726 30.8315H61.2849L63.2914 34.2296C63.5826 34.715 63.9063 35.4594 63.9063 35.4594H63.9386C63.9386 35.4594 63.8415 34.6827 63.8415 34.2296V30.8315H65.6215V38.1131H63.8415L61.8027 34.715C61.5114 34.2296 61.1878 33.4853 61.1878 33.4853H61.1554C61.1554 33.4853 61.2525 34.262 61.2525 34.715V38.1131H59.4726V30.8315Z" fill="currentColor"></path><path d="M68.9548 30.8315V33.6471H69.6991L71.2202 30.8315H73.1296L71.1554 34.3267V34.359L73.2266 38.1455H71.2202L69.6668 35.2005H68.9224V38.1455H67.1425V30.8315H68.9548Z" fill="currentColor"></path><path d="M46.1716 27.5307V17.3042H52.4499V18.0485C52.4499 18.8252 51.8351 19.4401 51.0584 19.4401H48.6635V21.576H51.7703V22.288C51.7703 23.0647 51.1231 23.712 50.3464 23.712H48.6635V27.4984H46.1716V27.5307Z" fill="currentColor"></path><path d="M56.3656 21.932H57.4659C57.8866 21.932 58.2102 21.8349 58.4368 21.6084C58.6633 21.3819 58.7928 21.0906 58.7928 20.6699C58.7928 20.1197 58.5986 19.7314 58.1779 19.5696C57.9513 19.4725 57.6277 19.4401 57.2394 19.4401H56.3979V21.932H56.3656ZM53.8413 17.3042H57.4012C58.3073 17.3042 58.9546 17.4013 59.3753 17.5631C59.9578 17.7896 60.4432 18.1456 60.7669 18.6634C61.0905 19.1812 61.2523 19.7961 61.2523 20.5404C61.2523 21.123 61.1229 21.6731 60.864 22.1909C60.6051 22.7087 60.2167 23.0971 59.7313 23.356V23.3883C59.8284 23.5178 59.9578 23.712 60.1196 24.0032L62.0937 27.5955H59.3429L57.5306 24.1327H56.3656V27.5955H53.8413V17.3042Z" fill="currentColor"></path><path d="M63.2588 27.5307V17.3042H69.6989V19.4401H65.7831V21.3171H68.8899V23.4531H65.7831V25.3948H69.8931V27.5307H63.2588Z" fill="currentColor"></path><path d="M71.479 27.5307V17.3042H77.8868V19.4401H74.0033V21.3171H77.1101V23.4531H74.0033V25.3948H78.1133V27.5307H71.479Z" fill="currentColor"></path><path d="M82.1909 25.3948H83.2265C84.1003 25.3948 84.7799 25.1359 85.2653 24.6181C85.7508 24.1003 86.0097 23.356 86.0097 22.3851C86.0097 21.4466 85.7508 20.7023 85.2653 20.1845C84.7799 19.6667 84.1003 19.4401 83.2265 19.4401H82.1909V25.3948ZM79.699 27.5307V17.3042H83.3236C84.9417 17.3042 86.2362 17.7573 87.1747 18.6634C88.1132 19.5696 88.5986 20.7993 88.5986 22.4175C88.5986 24.0356 88.1132 25.2654 87.1747 26.1715C86.2362 27.0777 84.9417 27.5307 83.3236 27.5307H79.699Z" fill="currentColor"></path><path d="M92.288 22.3529C92.288 23.2267 92.5469 23.9711 93.0647 24.5536C93.5825 25.1361 94.2621 25.4274 95.0388 25.4274C95.8478 25.4274 96.4951 25.1361 97.0129 24.5536C97.5307 23.9711 97.7896 23.2267 97.7896 22.3529C97.7896 21.5115 97.5307 20.7995 97.0129 20.2494C96.4951 19.6992 95.8478 19.408 95.0388 19.408C94.2297 19.408 93.5825 19.6992 93.0647 20.2494C92.5469 20.7995 92.288 21.5115 92.288 22.3529ZM89.699 22.3529C89.699 20.8643 90.1844 19.6345 91.1876 18.6313C92.1909 17.628 93.4854 17.1426 95.0388 17.1426C96.5922 17.1426 97.8867 17.628 98.8899 18.6313C99.8932 19.6345 100.379 20.8643 100.379 22.3529C100.379 23.874 99.8932 25.1685 98.8899 26.1717C97.8867 27.2073 96.5922 27.6927 95.0388 27.6927C93.4854 27.6927 92.1909 27.1749 91.1876 26.1717C90.1844 25.1361 89.699 23.874 89.699 22.3529Z" fill="currentColor"></path><path d="M101.576 27.5307L102.417 17.3042H105.136L106.624 21.6408L107.142 23.3236H107.175C107.369 22.644 107.531 22.0615 107.692 21.6408L109.181 17.3042H111.9L112.741 27.5307H110.249L109.925 22.9353C109.893 22.7087 109.893 22.4498 109.893 22.1586C109.893 21.8673 109.893 21.6408 109.893 21.479V21.2201H109.861C109.634 21.932 109.44 22.5146 109.278 22.9353L108.21 25.9126H106.074L105.006 22.9353L104.424 21.2201H104.391C104.424 21.8349 104.424 22.4175 104.391 22.9353L104.068 27.5307H101.576Z" fill="currentColor"></path></svg></a></div><nav class="flex justify-between items-center gap-4 mr-3"><div class="flex justify-between items-center"><a href="https://wa.me/77760595595" class="bg-[#e5e7eb] dark:bg-[#282828] flex justify-center items-center p-1 mr-2 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none"><path d="M18.3172 10.0083C18.0339 5.17496 13.6422 1.44997 8.5839 2.2833C5.10056 2.8583 2.3089 5.68328 1.76724 9.16662C1.45057 11.1833 1.86725 13.0916 2.77559 14.6666L2.03391 17.425C1.86724 18.05 2.44223 18.6166 3.05889 18.4416L5.77557 17.6916C7.0089 18.4166 8.45057 18.8333 9.99223 18.8333C14.6922 18.8333 18.5922 14.6916 18.3172 10.0083ZM14.0672 13.6C13.9922 13.75 13.9006 13.8916 13.7839 14.025C13.5756 14.25 13.3505 14.4166 13.1005 14.5166C12.8505 14.625 12.5756 14.675 12.2839 14.675C11.8589 14.675 11.4006 14.575 10.9256 14.3666C10.4422 14.1583 9.96725 13.8833 9.49225 13.5416C9.00892 13.1916 8.55891 12.8 8.12557 12.375C7.69224 11.9416 7.30889 11.4833 6.95889 11.0083C6.61722 10.5333 6.34224 10.0583 6.14224 9.58328C5.94224 9.10828 5.84225 8.64996 5.84225 8.21663C5.84225 7.9333 5.89224 7.6583 5.99224 7.4083C6.09224 7.14996 6.25059 6.91663 6.47559 6.7083C6.74226 6.44163 7.0339 6.31663 7.34224 6.31663C7.4589 6.31663 7.57555 6.34163 7.68388 6.39163C7.79222 6.44163 7.89224 6.51663 7.96724 6.62496L8.93388 7.99161C9.00888 8.09995 9.06723 8.19162 9.10056 8.28329C9.14223 8.37495 9.1589 8.45828 9.1589 8.54162C9.1589 8.64162 9.12558 8.74163 9.06724 8.84163C9.00891 8.94163 8.93389 9.04162 8.83389 9.14162L8.51722 9.47495C8.46722 9.52495 8.45059 9.57496 8.45059 9.64162C8.45059 9.67496 8.45888 9.70829 8.46722 9.74162C8.48388 9.77495 8.49225 9.79996 8.50058 9.82496C8.57558 9.96662 8.70889 10.1416 8.89223 10.3583C9.08389 10.5749 9.28393 10.8 9.50059 11.0166C9.72559 11.2416 9.94225 11.4416 10.1672 11.6333C10.3839 11.8166 10.5672 11.9416 10.7089 12.0166C10.7339 12.025 10.7589 12.0416 10.7839 12.0499C10.8172 12.0666 10.8506 12.0666 10.8922 12.0666C10.9672 12.0666 11.0173 12.0416 11.0673 11.9916L11.3839 11.675C11.4922 11.5666 11.5923 11.4916 11.6839 11.4416C11.7839 11.3833 11.8756 11.3499 11.9839 11.3499C12.0672 11.3499 12.1506 11.3666 12.2422 11.4083C12.3339 11.45 12.4339 11.5 12.5339 11.575L13.9172 12.5583C14.0256 12.6333 14.1006 12.725 14.1506 12.825C14.1922 12.9333 14.2172 13.0333 14.2172 13.15C14.1672 13.2916 14.1339 13.45 14.0672 13.6Z" fill="#5c5c5c"></path></svg></a><p class="hidden">+7 776 0 595 595</p></div><div class="flex justify-between items-center"><a href="tel:595" class="bg-[#e5e7eb] dark:bg-[#282828] flex justify-center items-center p-2  mr-2 rounded-full"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.436 2.577l2.437-.563a.566.566 0 01.645.326l1.125 2.625c.098.23.033.5-.162.656l-1.42 1.163a8.686 8.686 0 004.153 4.153l1.162-1.42a.562.562 0 01.657-.162l2.625 1.125a.57.57 0 01.328.647l-.563 2.437a.562.562 0 01-.548.436C6.873 14 2 9.137 2 3.125c0-.262.18-.49.436-.548z" fill="#5c5c5c"></path></svg></a><p class="hidden">595</p></div><div class="flex justify-between items-center"><button class="bg-[#e5e7eb] dark:bg-[#282828] flex justify-center items-center p-2 mr-2 rounded-full"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 8a3.333 3.333 0 100-6.667A3.333 3.333 0 008 8zM8 9.666c-3.34 0-6.06 2.24-6.06 5a.33.33 0 00.333.334h11.454a.33.33 0 00.333-.334c0-2.76-2.72-5-6.06-5z" fill="#B7BBBD"></path></svg></button><p class="hidden">Войти</p></div><button class="bg-[#e5e7eb] dark:bg-[#282828] p-2 rounded-full text-xs mr-2 changeLanguage">Рус</button><div class="bg-[#e5e7eb] dark:bg-[#282828] rounded-full p-[0.125rem] flex justify-between items-center gap-1"><button class="p-1 rounded-full lightButton" id="lightButton"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.012 1.62769C9.55204 1.62769 9.17871 2.00102 9.17871 2.46102V4.12769C9.17871 4.58769 9.55204 4.96102 10.012 4.96102C10.472 4.96102 10.8454 4.58769 10.8454 4.12769V2.46102C10.8454 2.00102 10.472 1.62769 10.012 1.62769ZM4.69954 3.81519C4.48621 3.81519 4.28955 3.91269 4.12705 4.07602C3.80121 4.40102 3.80121 4.92268 4.12705 5.24768L5.24622 6.39352C5.57205 6.71852 6.11954 6.71935 6.44454 6.39352C6.76954 6.06768 6.77037 5.52019 6.44454 5.19519L5.29871 4.07602C5.13537 3.91269 4.91288 3.81519 4.69954 3.81519ZM15.2987 3.84103C15.0854 3.84103 14.8887 3.91269 14.7254 4.07602L13.5795 5.19519C13.2545 5.52103 13.2545 6.06768 13.5795 6.39352C13.9054 6.71852 14.452 6.71852 14.7779 6.39352L15.897 5.24768C16.2229 4.92185 16.2229 4.40102 15.897 4.07602C15.7345 3.91269 15.512 3.84103 15.2987 3.84103ZM10.012 5.79436C7.71121 5.79436 5.84538 7.66019 5.84538 9.96103C5.84538 12.2619 7.71121 14.1277 10.012 14.1277C12.3129 14.1277 14.1787 12.2619 14.1787 9.96103C14.1787 7.66019 12.3129 5.79436 10.012 5.79436ZM2.51204 9.12769C2.05204 9.12769 1.67871 9.50102 1.67871 9.96103C1.67871 10.421 2.05204 10.7944 2.51204 10.7944H4.17871C4.63871 10.7944 5.01204 10.421 5.01204 9.96103C5.01204 9.50102 4.63871 9.12769 4.17871 9.12769H2.51204ZM15.8454 9.12769C15.3854 9.12769 15.012 9.50102 15.012 9.96103C15.012 10.421 15.3854 10.7944 15.8454 10.7944H17.512C17.972 10.7944 18.3454 10.421 18.3454 9.96103C18.3454 9.50102 17.972 9.12769 17.512 9.12769H15.8454ZM5.84538 13.2944C5.63204 13.2935 5.40955 13.366 5.24622 13.5285L4.10038 14.6744C3.77455 14.9994 3.77622 15.5202 4.10038 15.846C4.42538 16.1727 4.97204 16.171 5.29871 15.846L6.44454 14.7269C6.77037 14.4019 6.76871 13.8552 6.44454 13.5285C6.28204 13.366 6.05871 13.2952 5.84538 13.2944ZM14.1787 13.2944C13.9654 13.2944 13.742 13.366 13.5795 13.5285C13.2545 13.8544 13.2537 14.4019 13.5795 14.7269L14.752 15.8727C15.077 16.1977 15.5987 16.1985 15.9237 15.8727C16.2487 15.5469 16.2495 14.9994 15.9237 14.6744L14.7779 13.5285C14.6145 13.366 14.392 13.2944 14.1787 13.2944ZM10.012 14.961C9.55204 14.961 9.17871 15.3344 9.17871 15.7944V17.461C9.17871 17.921 9.55204 18.2944 10.012 18.2944C10.472 18.2944 10.8454 17.921 10.8454 17.461V15.7944C10.8454 15.3344 10.472 14.961 10.012 14.961Z" fill="#ffffff"></path></svg></button><button class="p-1 rounded-full dark:bg-[#2a8640]"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5242 2.07469C11.7967 1.84552 11.1751 2.64051 11.5609 3.29885C12.1701 4.33718 12.4984 5.50885 12.4984 6.68385C12.4984 10.3655 9.51341 13.3505 5.83174 13.3505C5.13849 13.3505 4.43733 13.238 3.80049 13.038C3.07308 12.8088 2.42524 13.6038 2.81091 14.2622C4.29216 16.7888 6.99941 18.3505 9.99841 18.3505C14.6009 18.3505 18.3317 14.6197 18.3317 10.0172C18.3317 6.34968 15.9642 3.15635 12.5242 2.07469Z" fill="#ffffff"></path></svg></button></div></nav></header><main class="bg-[#f5f6f7] dark:bg-[#1a1a1a] w-full"><section class="w-full"><div class="flex justify-between mr-16 rounded-br-[70px] bg-[#d9dcf8] dark:bg-[#2b2f4c] dark:text-white"><div class="flex flex-col gap-7 px-5 py-16 w-1/2"><div><h1 class="text-6xl font-bold">Предоплаченные карты</h1><div class="flex flex-col gap-5 py-5"><div class="flex gap-2"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 11.5L9.825 18 20 6" stroke="#2a8640" stroke-width="1.5" stroke-linecap="round" fill="none" stroke-linejoin="round"></path></svg><h3>Оформление онлайн за 5 минут без посредников</h3></div><div class="flex gap-2"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 11.5L9.825 18 20 6" stroke="#2a8640" stroke-width="1.5" stroke-linecap="round" fill="none" stroke-linejoin="round"></path></svg><h3>Моментальный выпуск цифровой карты</h3></div><div class="flex gap-2"><svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 11.5L9.825 18 20 6" stroke="#2a8640" stroke-width="1.5" stroke-linecap="round" fill="none" stroke-linejoin="round"></path></svg><h3>Номиналы в 50, 100, 200, 300 и 400 долларов</h3></div></div></div><div class="flex gap-1"><a href="https://bankffin.kz/ru/page/kak-podkliucit-kartu-k-apple-pay-na-smartfone" target="_blank" rel="noreferrer" class="css-0"><div class="px-3 py-2 bg-white rounded-lg"><svg width="49" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.875 2.579c-.57.675-1.48 1.208-2.391 1.132-.114-.914.332-1.884.854-2.484C7.908.533 8.903.038 9.71 0c.095.951-.275 1.884-.835 2.579zM9.7 3.891c-1.318-.077-2.447.751-3.074.751-.635 0-1.594-.713-2.637-.694-1.357.019-2.619.79-3.311 2.017-1.424 2.455-.37 6.09 1.005 8.087.674.99 1.48 2.075 2.543 2.036 1.006-.038 1.404-.656 2.619-.656 1.223 0 1.575.656 2.637.637 1.1-.019 1.793-.99 2.467-1.979.768-1.122 1.082-2.217 1.1-2.274-.018-.019-2.125-.828-2.144-3.263-.019-2.036 1.66-3.007 1.737-3.064-.95-1.408-2.43-1.56-2.942-1.598zm7.619-2.76v14.834h2.296v-5.072h3.178c2.904 0 4.944-1.998 4.944-4.89 0-2.893-2.002-4.872-4.868-4.872h-5.55zm2.296 1.941h2.647c1.992 0 3.131 1.066 3.131 2.94 0 1.875-1.139 2.95-3.14 2.95h-2.638v-5.89zM31.93 16.08c1.442 0 2.78-.733 3.387-1.893h.048v1.779h2.125V8.582c0-2.14-1.708-3.52-4.336-3.52-2.438 0-4.241 1.399-4.308 3.32h2.069c.17-.913 1.015-1.512 2.172-1.512 1.405 0 2.192.656 2.192 1.865v.818l-2.865.171c-2.666.162-4.108 1.256-4.108 3.159 0 1.922 1.49 3.197 3.624 3.197zm.617-1.76c-1.224 0-2.002-.59-2.002-1.494 0-.933.75-1.475 2.182-1.56l2.552-.162v.837c0 1.39-1.176 2.379-2.732 2.379zm7.78 5.68c2.239 0 3.292-.856 4.212-3.454l4.032-11.341h-2.334l-2.704 8.763h-.047l-2.704-8.763h-2.4l3.89 10.799-.21.656c-.35 1.114-.92 1.542-1.935 1.542a7.18 7.18 0 01-.673-.038v1.779c.133.038.702.057.873.057z" fill="#000"></path></svg></div></a><a href="https://bankffin.kz/ru/page/kak-podkliucit-kartu-k-google-pay-na-smartfone" target="_blank" rel="noreferrer" class="css-0"><div class="px-3 py-2 bg-white rounded-lg"><svg width="52" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#prefix__clip0_30_5926)"><path d="M24.324 9.77v5.863h-1.9V1.155h5.038a4.64 4.64 0 011.759.308c.56.215 1.07.536 1.503.946.436.384.784.856 1.019 1.383.235.527.352 1.097.343 1.672a3.94 3.94 0 01-.338 1.683 4.015 4.015 0 01-1.024 1.39c-.881.823-1.968 1.233-3.262 1.233h-3.138zm0-6.832v5.054h3.185c.35.01.697-.051 1.02-.18.324-.13.616-.323.86-.569.24-.23.433-.505.564-.809a2.423 2.423 0 00-.565-2.73 2.48 2.48 0 00-.855-.581 2.523 2.523 0 00-1.024-.186h-3.185zM36.462 5.404c1.404 0 2.512.367 3.324 1.102.813.735 1.219 1.742 1.218 3.022v6.105h-1.817v-1.375h-.082c-.787 1.133-1.833 1.699-3.138 1.699-1.115 0-2.047-.324-2.797-.97a3.107 3.107 0 01-.843-1.09 3.045 3.045 0 01-.282-1.337c0-1.025.395-1.84 1.186-2.445.791-.606 1.847-.909 3.169-.91 1.127 0 2.056.202 2.786.606v-.425a2.081 2.081 0 00-.203-.91 2.124 2.124 0 00-.581-.736 2.722 2.722 0 00-1.834-.678c-1.06 0-1.9.438-2.518 1.314l-1.673-1.031c.92-1.294 2.282-1.941 4.085-1.941zM34.005 12.6c-.001.236.055.47.165.681.11.211.269.393.465.532.42.323.941.495 1.476.485a3.061 3.061 0 002.136-.869c.63-.58.944-1.26.944-2.041-.593-.462-1.418-.693-2.477-.693-.772 0-1.415.182-1.93.546-.52.37-.779.82-.779 1.359zM51.432 5.728L45.091 20h-1.96l2.352-4.994-4.17-9.278h2.065l3.014 7.116h.041l2.931-7.116h2.068z" fill="#000"></path><path d="M16.65 8.507c0-.567-.05-1.132-.147-1.691h-8.01v3.203h4.588c-.094.512-.293 1-.584 1.434-.292.434-.67.806-1.113 1.094v2.08h2.738c1.604-1.448 2.527-3.589 2.527-6.12z" fill="#4285F4"></path><path d="M8.493 16.635c2.292 0 4.222-.737 5.63-2.008l-2.739-2.08c-.762.507-1.743.795-2.891.795-2.215 0-4.096-1.462-4.768-3.433H.905v2.143a8.385 8.385 0 003.13 3.345 8.628 8.628 0 004.458 1.238z" fill="#34A853"></path><path d="M3.725 9.91a4.886 4.886 0 010-3.185V4.583H.905A8.177 8.177 0 000 8.317c0 1.297.31 2.576.904 3.735l2.82-2.143z" fill="#FBBC04"></path><path d="M8.493 3.292A4.665 4.665 0 0111.75 4.54l2.424-2.374A8.257 8.257 0 008.493 0a8.628 8.628 0 00-4.458 1.238 8.385 8.385 0 00-3.13 3.345l2.82 2.143c.672-1.971 2.553-3.434 4.768-3.434z" fill="#EA4335"></path></g><defs><clippath id="prefix__clip0_30_5926"><path fill="#fff" d="M0 0h51.429v20H0z"></path></clippath></defs></svg></div></a><a href="https://bankffin.kz/ru/page/kak-podkliucit-kartu-k-samsung-pay-na-smartfone" target="_blank" rel="noreferrer" class="css-0"><div class="px-3 py-2 bg-white rounded-lg"><svg width="79" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M70.834 6.773v7.095H68.24L66.461 8.03h-.048l.096 5.838h-1.778V6.773h2.691l1.682 5.624h.024l-.096-5.624h1.802zm-37.34 7.166l1.346-7.166h3.22l1.345 7.166H37.46l-.985-6.526h-.024l-1.01 6.526h-1.946zm15.282-7.166l.168 7.166h-1.826l-.048-6.454h-.048l-1.201 6.454h-1.85l-1.202-6.454h-.048l-.048 6.454h-1.826l.168-7.166h2.98l.889 5.482h.024l.913-5.482h2.955zm11.366 6.075c.505 0 .672-.333.697-.523.023-.07.023-.19.023-.284V6.773h1.85v5.15c0 .142-.023.402-.023.474-.12 1.329-1.202 1.78-2.548 1.78-1.345 0-2.402-.428-2.523-1.78 0-.072-.024-.332-.024-.475V6.773h1.85v5.315c0 .095 0 .19.025.285.024.143.168.475.673.475zm-29.723-.95c.072.166.048.404.024.522-.072.238-.217.475-.721.475-.457 0-.721-.261-.721-.64v-.689h-1.946v.546c0 1.614 1.273 2.088 2.643 2.088 1.321 0 2.403-.45 2.57-1.637.097-.617.025-1.02 0-1.187-.312-1.494-3.075-1.945-3.267-2.8a1.001 1.001 0 010-.379c.048-.237.216-.475.673-.475.432 0 .673.261.673.641v.451h1.802v-.498c0-1.567-1.418-1.804-2.451-1.804-1.298 0-2.355.427-2.547 1.59a2.68 2.68 0 00.024.973c.288 1.494 2.883 1.898 3.244 2.824zm23.62 0c.072.166.047.38.023.522-.048.238-.216.475-.696.475-.457 0-.721-.261-.721-.64v-.689h-1.922v.546c0 1.59 1.273 2.065 2.619 2.065 1.297 0 2.379-.428 2.547-1.614.096-.617.024-1.02 0-1.163-.313-1.495-3.028-1.922-3.22-2.752a.674.674 0 010-.38c.048-.237.216-.475.649-.475.432 0 .673.261.673.641v.45h1.802v-.497c0-1.543-1.418-1.78-2.427-1.78-1.274 0-2.33.403-2.523 1.566-.048.309-.072.593.024.95.264 1.446 2.811 1.85 3.172 2.776zm21.264.878c.529 0 .697-.332.745-.521.024-.072.024-.19.024-.262v-1.044h-.745V9.905H77.9v1.922c0 .143 0 .237-.025.475-.12 1.305-1.273 1.78-2.57 1.78-1.274 0-2.428-.475-2.548-1.78-.024-.238-.024-.332-.024-.475V8.813c0-.118.024-.355.024-.474.168-1.353 1.25-1.78 2.547-1.78 1.298 0 2.427.427 2.547 1.78.025.213.025.474.025.474v.238h-1.827v-.404s0-.166-.024-.284c-.024-.166-.168-.522-.72-.522-.53 0-.674.356-.721.522-.025.095-.025.213-.025.332v3.274c0 .095 0 .19.025.261 0 .238.192.546.72.546z" fill="#000"></path><path d="M20.092 7.01c-.24-1.85-.913-3.536-2.09-4.77-1.25-1.162-2.956-1.827-4.83-2.064C11.37-.06 10.145.01 10.145.01S8.919-.037 7.117.176c-1.874.237-3.58.902-4.83 2.065C1.11 3.474.437 5.159.197 7.01-.043 8.79.005 10 .005 10s-.049 1.21.168 2.99c.24 1.85.913 3.536 2.09 4.77 1.25 1.162 2.956 1.826 4.83 2.064 1.802.237 3.027.166 3.027.166s1.226.047 3.028-.166c1.874-.238 3.58-.902 4.83-2.065 1.177-1.233 1.85-2.918 2.09-4.77.24-1.779.168-2.989.168-2.989s.096-1.21-.144-2.99z" fill="#1E4BC6"></path><path d="M3.729 7.082h1.826c.288 0 .528.047.769.142.24.095.432.237.6.403.168.166.313.356.409.594.096.237.144.474.144.735s-.048.498-.144.736a1.75 1.75 0 01-.409.593 2.043 2.043 0 01-.6.403 1.93 1.93 0 01-.77.143h-.816v1.495h-.985V7.082h-.024zm.985.901v1.923h.769c.144 0 .288-.024.408-.072a.915.915 0 00.505-.522.973.973 0 00.072-.38.973.973 0 00-.072-.379 1.343 1.343 0 00-.193-.308.915.915 0 00-.312-.214 1.135 1.135 0 00-.408-.071h-.77v.023zm5.046 4.343a2.194 2.194 0 01-1.442-.546 2.262 2.262 0 01-.48-.664 2.163 2.163 0 01-.193-.902c0-.332.048-.64.168-.902.12-.26.289-.474.48-.664.193-.19.433-.309.674-.404.264-.095.504-.142.793-.142.288 0 .552.047.768.142.24.095.433.238.601.404v-.546h.985v4.223h-.985v-.593c-.144.19-.36.333-.6.451-.24.095-.481.143-.77.143zm.168-.878c.192 0 .36-.024.504-.095.145-.071.289-.142.409-.261.12-.119.192-.237.264-.38.072-.143.096-.308.096-.474a1.05 1.05 0 00-.096-.475c-.072-.142-.144-.285-.264-.38a1.2 1.2 0 00-.409-.26.986.986 0 00-.504-.12c-.168 0-.337.025-.505.096a1.201 1.201 0 00-.408.26.993.993 0 00-.265.38 1.05 1.05 0 00-.096.475c0 .166.024.332.096.474.073.143.169.285.265.404.12.119.264.19.408.261.144.047.313.095.505.095zm3.556-3.322l1.201 2.87 1.106-2.87h1.033L14.3 14.248h-1.01l.89-2.112-1.73-4.01h1.033z" fill="#fff"></path></svg></div></a></div><button class="py-4 px-6 w-52 rounded-2xl bg-[#2a8640] text-white">Купить карту</button></div><div class="flex flex-col justify-end w-1/3"><img src="./Процесс по открытию предоплаченных карт_files/banner.webp" alt="Карточки" class="w-full h-auto"></div></div></section><section class="px-3 my-[100px] dark:text-white"><h2 class="text-5xl font-bold mb-10">Как работает карта</h2><h3 class="w-[90%] text-xl tracking-tight">Цифровая предоплаченная карта открывается без документов и счёта. Ей можно оплатить покупки в магазине или подписку в интернете <img src="./Процесс по открытию предоплаченных карт_files/socialMedia.svg" alt="социальные сети" class="inline">. Когда закончатся деньги — карта закроется автоматически</h3><div class="mt-10 flex gap-5 justify-between"><div class="w-1/4 pt-2 px-5 pb-5 rounded-[20px] bg-white dark:bg-[#282828] flex flex-col gap-2"><svg width="72" height="72" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="25.072" cy="51.679" r="6.32" fill="url(#prefix__paint0_linear_70_6791)"></circle><circle cx="42.575" cy="51.679" r="6.32" fill="url(#prefix__paint1_linear_70_6791)"></circle><path fill-rule="evenodd" clip-rule="evenodd" d="M49.332 15.858A3.16 3.16 0 0152.212 14h6.772a3.16 3.16 0 110 6.32H54.25l-3.449 7.623a3.16 3.16 0 01-5.759-2.605l4.29-9.48z" fill="url(#prefix__paint2_linear_70_6791)"></path><g filter="url(#prefix__filter0_bi_70_6791)"><path d="M11.32 28.013c-.667-2.537 1.246-5.018 3.869-5.018h37.755c2.623 0 4.536 2.481 3.868 5.018l-5.187 19.712a4 4 0 01-3.868 2.983h-27.38a4 4 0 01-3.869-2.983L11.32 28.013z" fill="#72BF44" fill-opacity="0.5"></path></g><defs><lineargradient id="prefix__paint0_linear_70_6791" x1="18.752" y1="45.359" x2="29.775" y2="44.078" gradientUnits="userSpaceOnUse"><stop stop-color="#4FB84E"></stop><stop offset="1" stop-color="#2A8640"></stop></lineargradient><lineargradient id="prefix__paint1_linear_70_6791" x1="36.255" y1="45.359" x2="47.278" y2="44.078" gradientUnits="userSpaceOnUse"><stop stop-color="#4FB84E"></stop><stop offset="1" stop-color="#2A8640"></stop></lineargradient><lineargradient id="prefix__paint2_linear_70_6791" x1="44.762" y1="14" x2="59.876" y2="12.068" gradientUnits="userSpaceOnUse"><stop stop-color="#4FB84E"></stop><stop offset="1" stop-color="#2A8640"></stop></lineargradient><filter id="prefix__filter0_bi_70_6791" x="7.187" y="18.995" width="53.76" height="35.713" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix"></feflood><fegaussianblur in="BackgroundImageFix" stdDeviation="2"></fegaussianblur><fecomposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_70_6791"></fecomposite><feblend in="SourceGraphic" in2="effect1_backgroundBlur_70_6791" result="shape"></feblend><fecolormatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix><feoffset dx="0.2" dy="0.1"></feoffset><fegaussianblur stdDeviation="0.5"></fegaussianblur><fecomposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></fecomposite><fecolormatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.6 0"></fecolormatrix><feblend in2="shape" result="effect2_innerShadow_70_6791"></feblend></filter></defs></svg><h4>Оплаты по всему миру и в интернете</h4></div><div class="w-1/4 pt-2 px-5 pb-5 rounded-[20px] bg-white dark:bg-[#282828] flex flex-col gap-2"><svg width="72" height="72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M37.278 49.008c3.998-1.598 17.258-8.544 17.86-30.568a2.738 2.738 0 00-1.295-2.384 33.495 33.495 0 00-35.391 0 2.738 2.738 0 00-1.296 2.384c.603 22.024 13.863 28.97 17.86 30.568a3.014 3.014 0 002.262 0z" fill="url(#prefix__paint0_linear_70_6803)"></path><g filter="url(#prefix__filter0_bi_70_6803)"><path d="M37.188 60.821c4.27-1.5 20.252-8.695 21.105-32.522.044-1.232-.625-2.383-1.695-2.995a41.219 41.219 0 00-40.9 0c-1.071.612-1.74 1.763-1.696 2.995.853 23.827 16.835 31.022 21.104 32.522.681.24 1.401.24 2.082 0z" fill="#72BF44" fill-opacity="0.5"></path></g><path d="M34.642 40.904a.2.2 0 00.28 0l7.404-7.403a1.67 1.67 0 012.362 2.363l-8.724 8.725a1.67 1.67 0 01-2.363 0l-4.986-4.986a1.67 1.67 0 112.363-2.363l3.663 3.664z" fill="#fff" fill-opacity="0.9" stroke="url(#prefix__paint1_linear_70_6803)" stroke-width="0.398" stroke-linecap="round" stroke-linejoin="round"></path><defs><lineargradient id="prefix__paint0_linear_70_6803" x1="17.155" y1="11" x2="50.282" y2="7.174" gradientUnits="userSpaceOnUse"><stop stop-color="#4FB84E"></stop><stop offset="1" stop-color="#2A8640"></stop></lineargradient><lineargradient id="prefix__paint1_linear_70_6803" x1="28.423" y1="34.591" x2="39.577" y2="38.309" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"></stop><stop offset="1" stop-color="#fff" stop-opacity="0"></stop></lineargradient><filter id="prefix__filter0_bi_70_6803" x="10" y="15.873" width="52.295" height="49.127" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix"></feflood><fegaussianblur in="BackgroundImageFix" stdDeviation="2"></fegaussianblur><fecomposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_70_6803"></fecomposite><feblend in="SourceGraphic" in2="effect1_backgroundBlur_70_6803" result="shape"></feblend><fecolormatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix><feoffset dx="0.2" dy="0.1"></feoffset><fegaussianblur stdDeviation="0.5"></fegaussianblur><fecomposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></fecomposite><fecolormatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.6 0"></fecolormatrix><feblend in2="shape" result="effect2_innerShadow_70_6803"></feblend></filter></defs></svg><h4>Есть CVC и 3D-secure, работает в электронных кошельках</h4></div><div class="w-1/4 pt-2 px-5 pb-5 rounded-[20px] bg-white dark:bg-[#282828] flex flex-col gap-2"><svg width="72" height="72" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="16" y="11" width="29" height="49" rx="3" fill="url(#prefix__paint0_linear_1179_22543)"></rect><rect x="24.7" y="14" width="11.6" height="2" rx="1" fill="#fff" fill-opacity="0.9"></rect><g filter="url(#prefix__filter0_bi_1179_22543)"><rect x="25" y="29" width="32" height="24" rx="4" fill="#72BF44" fill-opacity="0.5"></rect></g><rect x="30" y="35" width="20" height="2" rx="1" fill="#fff" fill-opacity="0.9"></rect><rect x="30" y="40" width="20" height="2" rx="1" fill="#fff" fill-opacity="0.9"></rect><rect x="30" y="45" width="12" height="2" rx="1" fill="#fff" fill-opacity="0.9"></rect><defs><lineargradient id="prefix__paint0_linear_1179_22543" x1="16" y1="11" x2="41.508" y2="9.245" gradientUnits="userSpaceOnUse"><stop stop-color="#4FB84E"></stop><stop offset="1" stop-color="#2A8640"></stop></lineargradient><filter id="prefix__filter0_bi_1179_22543" x="21" y="25" width="40" height="32" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix"></feflood><fegaussianblur in="BackgroundImageFix" stdDeviation="2"></fegaussianblur><fecomposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_1179_22543"></fecomposite><feblend in="SourceGraphic" in2="effect1_backgroundBlur_1179_22543" result="shape"></feblend><fecolormatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix><feoffset dx="0.2" dy="0.1"></feoffset><fegaussianblur stdDeviation="0.5"></fegaussianblur><fecomposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></fecomposite><fecolormatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.6 0"></fecolormatrix><feblend in2="shape" result="effect2_innerShadow_1179_22543"></feblend></filter></defs></svg><h4>Для открытия не нужны документы, достаточно номера телефона</h4></div><div class="w-1/4 pt-2 px-5 pb-5 rounded-[20px] bg-white dark:bg-[#282828] flex flex-col gap-2"><svg width="72" height="72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42.816 13.339c2.502-2.554 6.893-1.46 7.904 1.97l9.093 30.867c1.01 3.43-2.118 6.622-5.63 5.746L22.57 44.04c-3.513-.876-4.776-5.163-2.273-7.716l22.52-22.985z" fill="url(#prefix__paint0_linear_778_13487)"></path><g filter="url(#prefix__filter0_bi_778_13487)"><path d="M28.927 25.313c1.81-3.084 6.336-3.084 8.146 0l16.29 27.75C55.173 56.145 52.91 60 49.29 60H16.71c-3.62 0-5.883-3.854-4.073-6.938l16.29-27.75z" fill="#72BF44" fill-opacity="0.5"></path></g><path d="M33.011 46.306A1.996 1.996 0 0035 44.323v-6.365C35 36.875 34.109 36 33.011 36 31.914 36 31 36.875 31 37.958v6.365c0 1.08.914 1.983 2.011 1.983zM31 52.02c0 1.078.914 1.98 2.011 1.98A2 2 0 0035 51.995c0-1.078-.891-1.957-1.989-1.957-1.097 0-2.011.9-2.011 1.982z" fill="#fff" fill-opacity="0.9"></path><defs><lineargradient id="prefix__paint0_linear_778_13487" x1="26.951" y1="7" x2="63.515" y2="11.155" gradientUnits="userSpaceOnUse"><stop stop-color="#4FB84E"></stop><stop offset="1" stop-color="#2A8640"></stop></lineargradient><filter id="prefix__filter0_bi_778_13487" x="8" y="19" width="50" height="45" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feflood flood-opacity="0" result="BackgroundImageFix"></feflood><fegaussianblur in="BackgroundImageFix" stdDeviation="2"></fegaussianblur><fecomposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_778_13487"></fecomposite><feblend in="SourceGraphic" in2="effect1_backgroundBlur_778_13487" result="shape"></feblend><fecolormatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix><feoffset dx="0.2" dy="0.1"></feoffset><fegaussianblur stdDeviation="0.5"></fegaussianblur><fecomposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></fecomposite><fecolormatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.6 0"></fecolormatrix><feblend in2="shape" result="effect2_innerShadow_778_13487"></feblend></filter></defs></svg><h4>Пополнение, снятие денег или переводы с карты на карту невозможны</h4></div></div></section><section class="px-5 my-[100px] dark:text-white"><h2 class="text-5xl font-bold mb-10">Условия и тарифы</h2><table class="w-full my-10"><tbody><tr class="border-b"><td class="p-5 bg-white dark:bg-[#282828] rounded-t-2xl">Вид карты</td><td class="p-5"><h4 class="font-bold">Mastercard Prepaid</h4><p class="text-xs text-[#5c5c5c]">цифровая</p></td></tr><tr class="border-b"><td class="p-5  bg-white dark:bg-[#282828]">Выпуск</td><td class="p-5 flex gap-5"><div><h4 class="font-bold">50 $ на карту</h4><p class="text-xs text-[#5c5c5c]">+ 3 000 ₸</p></div><div><h4 class="font-bold">100 $ на карту</h4><p class="text-xs text-[#5c5c5c]">+ 5 000 ₸</p></div><div><h4 class="font-bold">200 $ на карту</h4><p class="text-xs text-[#5c5c5c]">+ 7 000 ₸</p></div><div><h4 class="font-bold">300 $ на карту</h4><p class="text-xs text-[#5c5c5c]">+ 9 000 ₸</p></div><div><h4 class="font-bold">400 $ на карту</h4><p class="text-xs text-[#5c5c5c]">+ 11 000 ₸</p></div></td></tr><tr class="border-b"><td class="p-5  bg-white dark:bg-[#282828]">Валюта</td><td class="p-5 font-bold">доллары</td></tr><tr class="border-b"><td class="p-5  bg-white dark:bg-[#282828]">Срок действия</td><td class="p-5"><h4 class="font-bold">6 месяцев с момента выпуска </h4><p class="text-xs text-[#5c5c5c]">Карта закроется автоматически, когда закончится срок действия или деньги на карте</p></td></tr><tr class="border-b"><td class="p-5  bg-white dark:bg-[#282828]">Оплаты в торговых точках и интернете</td><td class="p-5 font-bold">без комиссии</td></tr><tr class="border-b"><td class="p-5  bg-white dark:bg-[#282828]">Переводы на карты других банков</td><td class="p-5 font-bold">нет</td></tr><tr class="border-b"><td class="p-5  bg-white dark:bg-[#282828]">Пополнения</td><td class="p-5 font-bold">нет</td></tr><tr><td class="p-5  bg-white dark:bg-[#282828] rounded-b-2xl">Снятие наличных</td><td class="p-5 font-bold">нет</td></tr></tbody></table></section><section class="px-5 py-[100px] dark:text-white"><h2 class="text-5xl font-bold mb-10">Часто задаваемые вопросы</h2><div class="flex gap-8"><div class="w-2/5 flex flex-col gap-1"><p id="open" class="activeTab text-lg cursor-pointer py-5 px-6 bg-white dark:bg-[#282828] rounded-t-2xl">Открытие и получение</p><p id="use" class="text-lg cursor-pointer py-5 px-6 bg-white dark:bg-[#282828]">Использование</p><p id="legal" class="text-lg cursor-pointer py-5 px-6 bg-white dark:bg-[#282828]">Налоговые и юридические вопросы</p><p id="problem" class="text-lg cursor-pointer py-5 px-6 bg-white dark:bg-[#282828] rounded-b-2xl">Решение проблем</p></div><div class="w-3/5" id="openBlock"><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Что нужно для открытия карты?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Только номер мобильного телефона для приёма SMS.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Можно ли открыть вторую карту?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">На один номер телефона можно открыть до 10 карт в месяц.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Как заказать пластиковую карту?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Предоплаченные карты выпускаются только в цифровом виде.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Как активировать карту?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Карта активируется автоматически.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Где узнать данные карты?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Данные карты вы получите после её покупки. Часть — на сайте, часть — в SMS.</p></div></div><div class="w-3/5 hidden" id="useBlock"><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Зачем нужен личный кабинет?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">В личном кабинете отображаются карты с их балансом, выпиской и реквизитами.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Когда я смогу начать пользоваться картой?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Сразу после получения SMS с данными карты.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Как узнать баланс карты?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">В личном кабинете или в SMS, которое вы будете получать после каждой покупки или перевода.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Как узнать реквизиты карты?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">В личном кабинете.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Конвертации</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Валюта карты — доллары США. Конвертация в валюту покупки будет происходить по обменному курсу Фридом Банка.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Как пополнить карту?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Предоплаченные карты пополнять нельзя.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Что произойдёт с деньгами на карте, когда её срок действия закончится?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Неиспользованная вами сумма на карте сгорает.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Как закрыть карту?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Карта закроется автоматически, когда вы потратите все деньги или закончится срок её действия.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Как добавить карту в мобильный кошелёк?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">У нас есть инструкции для  Apple Pay, Samsung Pay, Google Pay.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Как перевести деньги с предоплаченной на другую карту?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Переводить с предоплаченной карты нельзя</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Как снять наличные с карты?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Снять деньги с предоплаченной карты нельзя.</p></div></div><div class="w-3/5 hidden" id="legalBlock"><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Нужно ли уведомлять налоговые органы своей страны об открытии предоплаченной карты в иностранном банке?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Предоплаченные карты не предполагают открытия полноценного банковского счёта. Поэтому уведомлять налоговые органы об открытии такой карты не нужно.</p></div></div><div class="w-3/5 hidden" id="problemBlock"><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Я потерял данные карты, что делать?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">К сожалению, восстановить данные карты, перевыпустить её или вернуть вам оставшиеся деньги невозможно.</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Не пришла SMS с данными карты</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">Обратитесь в службу заботы о пользователях: 8 800 555 89 90 (для звонков) +7 776 0 595 595 (whatsapp для клиентов за рубежом) salem@bankffin.kz</p></div><div><div class="question flex mt-3 justify-between cursor-pointer"><h3 class="text-2xl font-bold mb-5 w-[90%]">Как связаться со службой поддержки?</h3><svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.42 8.95l-6.52 6.52c-.77.77-2.03.77-2.8 0L4.58 8.95" stroke="#2a8640" fill="none" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><p class="hidden mt-1 mb-3 text-[#5c5c5c]">8 800 555 89 90 (для звонков) +7 776 0 595 595 (whatsapp для клиентов за рубежом) salem@bankffin.kz</p></div></div></div></section></main><footer class="bg-[#f5f6f7] pt-10 pb-10 border-t dark:bg-[#282828] dark:text-white"><section class="flex justify-between items-center pb-20"><a href="http://localhost:5173/#" class="pl-2"><svg xmlns="http://www.w3.org/2000/svg" width="155" height="47" viewBox="0 0 155 47" fill="none"><path d="M20.1671 47C20.1671 47 0 41.0173 0 11.3571V0H40.3342V11.3571C40.3342 39.9018 20.1671 47 20.1671 47Z" fill="#4FB84E"></path><path d="M31.8342 11.4585H15.5898V20.8889H31.8342V23.7282C31.8342 28.4941 30.4763 32.3474 23.3348 32.3474H15.5898V44.7692C18.2553 46.4423 20.1664 47 20.1664 47C20.1664 47 40.3335 39.9018 40.3335 11.3571V2.78857C40.3335 7.55449 38.2715 11.3571 31.8342 11.4585Z" fill="#055532"></path><path d="M51.5488 27.9363H55.7231C57.9862 27.9363 59.5956 28.9503 59.5956 30.9276C59.5956 31.891 59.1429 32.8543 58.288 33.3613V33.412C59.5955 33.8176 60.0482 34.9837 60.0482 35.9978C60.0482 38.4821 57.9862 39.3947 55.7231 39.3947H51.5488V27.9363ZM55.7734 32.3473C56.4774 32.3473 56.7792 31.8403 56.7792 31.2826C56.7792 30.7755 56.4774 30.3192 55.7231 30.3192H54.3652V32.3473H55.7734ZM55.9745 36.9611C56.7792 36.9611 57.1815 36.4034 57.1815 35.7443C57.1815 35.0851 56.7792 34.5781 55.9745 34.5781H54.3149V36.9611H55.9745Z" fill="currentColor"></path><path d="M64.323 27.9363H67.2399L71.1124 39.344H68.2458L67.5417 36.9611H64.0212L63.3172 39.344H60.4505L64.323 27.9363ZM66.8879 34.7302L66.2341 32.4994C66.0329 31.7896 65.7815 30.522 65.7815 30.522H65.7312C65.7312 30.522 65.4797 31.7896 65.2786 32.4994L64.6248 34.7302H66.8879Z" fill="currentColor"></path><path d="M72.2188 27.9363H75.0352L78.1533 33.2599C78.6059 34.0204 79.1089 35.1865 79.1089 35.1865H79.1591C79.1591 35.1865 79.0083 33.9697 79.0083 33.2599V27.9363H81.7743V39.344H79.0083L75.8399 34.0204C75.3872 33.2599 74.8843 32.0938 74.8843 32.0938H74.834C74.834 32.0938 74.9849 33.3106 74.9849 34.0204V39.344H72.2188V27.9363Z" fill="currentColor"></path><path d="M86.9544 27.9363V32.3473H88.1111L90.4748 27.9363H93.4421L90.3743 33.412V33.4627L93.5929 39.3947H90.4748L88.0608 34.7809H86.9041V39.3947H84.1381V27.9363H86.9544Z" fill="currentColor"></path><path d="M51.5488 22.765V6.74344H61.3055V7.90957C61.3055 9.1264 60.3499 10.0897 59.1429 10.0897H55.4213V13.436H60.2493V14.5514C60.2493 15.7683 59.2435 16.7823 58.0365 16.7823H55.4213V22.7143H51.5488V22.765Z" fill="currentColor"></path><path d="M67.3905 13.9937H69.1004C69.7542 13.9937 70.2571 13.8416 70.6092 13.4867C70.9612 13.1318 71.1624 12.6755 71.1624 12.0164C71.1624 11.1544 70.8606 10.546 70.2068 10.2925C69.8548 10.1404 69.3519 10.0897 68.7484 10.0897H67.4408V13.9937H67.3905ZM63.4677 6.74344H68.9998C70.408 6.74344 71.4138 6.89555 72.0676 7.14905C72.9729 7.50396 73.7273 8.06167 74.2302 8.87289C74.7331 9.68411 74.9846 10.6474 74.9846 11.8136C74.9846 12.7262 74.7834 13.5881 74.3811 14.3993C73.9787 15.2105 73.3752 15.819 72.6208 16.2246V16.2753C72.7717 16.4781 72.9729 16.7823 73.2243 17.2386L76.2922 22.8664H72.0173L69.201 17.4414H67.3905V22.8664H63.4677V6.74344Z" fill="currentColor"></path><path d="M78.1027 22.765V6.74344H88.1108V10.0897H82.0254V13.0304H86.8535V16.3767H82.0254V19.4187H88.4125V22.765H78.1027Z" fill="currentColor"></path><path d="M90.8771 22.765V6.74344H100.835V10.0897H94.7999V13.0304H99.6279V16.3767H94.7999V19.4187H101.187V22.765H90.8771Z" fill="currentColor"></path><path d="M107.524 19.4187H109.133C110.491 19.4187 111.547 19.0131 112.301 18.2019C113.056 17.3907 113.458 16.2246 113.458 14.7035C113.458 13.2332 113.056 12.0671 112.301 11.2558C111.547 10.4446 110.491 10.0897 109.133 10.0897H107.524V19.4187ZM103.651 22.765V6.74344H109.284C111.798 6.74344 113.81 7.45326 115.269 8.87289C116.727 10.2925 117.481 12.2192 117.481 14.7542C117.481 17.2893 116.727 19.2159 115.269 20.6356C113.81 22.0552 111.798 22.765 109.284 22.765H103.651Z" fill="currentColor"></path><path d="M123.215 14.6531C123.215 16.0221 123.617 17.1882 124.422 18.1008C125.226 19.0134 126.283 19.4697 127.49 19.4697C128.747 19.4697 129.753 19.0134 130.557 18.1008C131.362 17.1882 131.764 16.0221 131.764 14.6531C131.764 13.3349 131.362 12.2195 130.557 11.3575C129.753 10.4956 128.747 10.0393 127.49 10.0393C126.232 10.0393 125.226 10.4956 124.422 11.3575C123.617 12.2195 123.215 13.3349 123.215 14.6531ZM119.191 14.6531C119.191 12.3209 119.946 10.3942 121.505 8.82249C123.064 7.25075 125.076 6.49023 127.49 6.49023C129.904 6.49023 131.915 7.25075 133.474 8.82249C135.033 10.3942 135.788 12.3209 135.788 14.6531C135.788 17.0361 135.033 19.0641 133.474 20.6359C131.915 22.2583 129.904 23.0188 127.49 23.0188C125.076 23.0188 123.064 22.2076 121.505 20.6359C119.946 19.0134 119.191 17.0361 119.191 14.6531Z" fill="currentColor"></path><path d="M137.648 22.765L138.956 6.74344H143.181L145.494 13.5374L146.299 16.1739H146.349C146.651 15.1091 146.902 14.1965 147.154 13.5374L149.467 6.74344H153.692L154.999 22.765H151.127L150.624 15.5654C150.573 15.2105 150.573 14.8049 150.573 14.3486C150.573 13.8923 150.573 13.5374 150.573 13.2839V12.8783H150.523C150.171 13.9937 149.869 14.9063 149.618 15.5654L147.958 20.23H144.639L142.979 15.5654L142.074 12.8783H142.024C142.074 13.8416 142.074 14.7542 142.024 15.5654L141.521 22.765H137.648Z" fill="currentColor"></path></svg></a><nav class="flex justify-between gap-10"><div class="flex"><a href="https://wa.me/77760595595" class="p-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none"><path d="M18.3172 10.0083C18.0339 5.17496 13.6422 1.44997 8.5839 2.2833C5.10056 2.8583 2.3089 5.68328 1.76724 9.16662C1.45057 11.1833 1.86725 13.0916 2.77559 14.6666L2.03391 17.425C1.86724 18.05 2.44223 18.6166 3.05889 18.4416L5.77557 17.6916C7.0089 18.4166 8.45057 18.8333 9.99223 18.8333C14.6922 18.8333 18.5922 14.6916 18.3172 10.0083ZM14.0672 13.6C13.9922 13.75 13.9006 13.8916 13.7839 14.025C13.5756 14.25 13.3505 14.4166 13.1005 14.5166C12.8505 14.625 12.5756 14.675 12.2839 14.675C11.8589 14.675 11.4006 14.575 10.9256 14.3666C10.4422 14.1583 9.96725 13.8833 9.49225 13.5416C9.00892 13.1916 8.55891 12.8 8.12557 12.375C7.69224 11.9416 7.30889 11.4833 6.95889 11.0083C6.61722 10.5333 6.34224 10.0583 6.14224 9.58328C5.94224 9.10828 5.84225 8.64996 5.84225 8.21663C5.84225 7.9333 5.89224 7.6583 5.99224 7.4083C6.09224 7.14996 6.25059 6.91663 6.47559 6.7083C6.74226 6.44163 7.0339 6.31663 7.34224 6.31663C7.4589 6.31663 7.57555 6.34163 7.68388 6.39163C7.79222 6.44163 7.89224 6.51663 7.96724 6.62496L8.93388 7.99161C9.00888 8.09995 9.06723 8.19162 9.10056 8.28329C9.14223 8.37495 9.1589 8.45828 9.1589 8.54162C9.1589 8.64162 9.12558 8.74163 9.06724 8.84163C9.00891 8.94163 8.93389 9.04162 8.83389 9.14162L8.51722 9.47495C8.46722 9.52495 8.45059 9.57496 8.45059 9.64162C8.45059 9.67496 8.45888 9.70829 8.46722 9.74162C8.48388 9.77495 8.49225 9.79996 8.50058 9.82496C8.57558 9.96662 8.70889 10.1416 8.89223 10.3583C9.08389 10.5749 9.28393 10.8 9.50059 11.0166C9.72559 11.2416 9.94225 11.4416 10.1672 11.6333C10.3839 11.8166 10.5672 11.9416 10.7089 12.0166C10.7339 12.025 10.7589 12.0416 10.7839 12.0499C10.8172 12.0666 10.8506 12.0666 10.8922 12.0666C10.9672 12.0666 11.0173 12.0416 11.0673 11.9916L11.3839 11.675C11.4922 11.5666 11.5923 11.4916 11.6839 11.4416C11.7839 11.3833 11.8756 11.3499 11.9839 11.3499C12.0672 11.3499 12.1506 11.3666 12.2422 11.4083C12.3339 11.45 12.4339 11.5 12.5339 11.575L13.9172 12.5583C14.0256 12.6333 14.1006 12.725 14.1506 12.825C14.1922 12.9333 14.2172 13.0333 14.2172 13.15C14.1672 13.2916 14.1339 13.45 14.0672 13.6Z" fill="#5c5c5c"></path></svg></a><div><p>+7 776 1 595 595</p><p class="text-xs text-[#939393]">WHATSAPP</p></div></div><div class="flex"><a href="tel:595" class="p-3"><svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.436 2.577l2.437-.563a.566.566 0 01.645.326l1.125 2.625c.098.23.033.5-.162.656l-1.42 1.163a8.686 8.686 0 004.153 4.153l1.162-1.42a.562.562 0 01.657-.162l2.625 1.125a.57.57 0 01.328.647l-.563 2.437a.562.562 0 01-.548.436C6.873 14 2 9.137 2 3.125c0-.262.18-.49.436-.548z" fill="#5c5c5c"></path></svg></a><div><p>595</p><p class="text-xs text-[#939393]">БЕПЛАТНЫЙ ЗВОНОК</p></div></div><div class="flex justify-between gap-5"><a href="https://www.instagram.com/bankffin.kz/" class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M12 2.5C14.717 2.5 15.056 2.51 16.122 2.56C17.187 2.61 17.912 2.777 18.55 3.025C19.21 3.279 19.766 3.623 20.322 4.178C20.8305 4.6779 21.224 5.28259 21.475 5.95C21.722 6.587 21.89 7.313 21.94 8.378C21.987 9.444 22 9.783 22 12.5C22 15.217 21.99 15.556 21.94 16.622C21.89 17.687 21.722 18.412 21.475 19.05C21.2247 19.7178 20.8311 20.3226 20.322 20.822C19.822 21.3303 19.2173 21.7238 18.55 21.975C17.913 22.222 17.187 22.39 16.122 22.44C15.056 22.487 14.717 22.5 12 22.5C9.283 22.5 8.944 22.49 7.878 22.44C6.813 22.39 6.088 22.222 5.45 21.975C4.78233 21.7245 4.17753 21.3309 3.678 20.822C3.16941 20.3222 2.77593 19.7175 2.525 19.05C2.277 18.413 2.11 17.687 2.06 16.622C2.013 15.556 2 15.217 2 12.5C2 9.783 2.01 9.444 2.06 8.378C2.11 7.312 2.277 6.588 2.525 5.95C2.77524 5.28218 3.1688 4.67732 3.678 4.178C4.17767 3.66923 4.78243 3.27573 5.45 3.025C6.088 2.777 6.812 2.61 7.878 2.56C8.944 2.513 9.283 2.5 12 2.5ZM12 7.5C10.6739 7.5 9.40215 8.02678 8.46447 8.96447C7.52678 9.90215 7 11.1739 7 12.5C7 13.8261 7.52678 15.0979 8.46447 16.0355C9.40215 16.9732 10.6739 17.5 12 17.5C13.3261 17.5 14.5979 16.9732 15.5355 16.0355C16.4732 15.0979 17 13.8261 17 12.5C17 11.1739 16.4732 9.90215 15.5355 8.96447C14.5979 8.02678 13.3261 7.5 12 7.5ZM18.5 7.25C18.5 6.91848 18.3683 6.60054 18.1339 6.36612C17.8995 6.1317 17.5815 6 17.25 6C16.9185 6 16.6005 6.1317 16.3661 6.36612C16.1317 6.60054 16 6.91848 16 7.25C16 7.58152 16.1317 7.89946 16.3661 8.13388C16.6005 8.3683 16.9185 8.5 17.25 8.5C17.5815 8.5 17.8995 8.3683 18.1339 8.13388C18.3683 7.89946 18.5 7.58152 18.5 7.25ZM12 9.5C12.7956 9.5 13.5587 9.81607 14.1213 10.3787C14.6839 10.9413 15 11.7044 15 12.5C15 13.2956 14.6839 14.0587 14.1213 14.6213C13.5587 15.1839 12.7956 15.5 12 15.5C11.2044 15.5 10.4413 15.1839 9.87868 14.6213C9.31607 14.0587 9 13.2956 9 12.5C9 11.7044 9.31607 10.9413 9.87868 10.3787C10.4413 9.81607 11.2044 9.5 12 9.5Z" fill="#5c5c5c"></path></svg></a><a href="https://www.facebook.com/bankffin.kz" class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M12 2.5C6.477 2.5 2 6.977 2 12.5C2 17.491 5.657 21.628 10.438 22.379V15.39H7.898V12.5H10.438V10.297C10.438 7.791 11.93 6.407 14.215 6.407C15.309 6.407 16.453 6.602 16.453 6.602V9.062H15.193C13.95 9.062 13.563 9.833 13.563 10.624V12.5H16.336L15.893 15.39H13.563V22.379C18.343 21.629 22 17.49 22 12.5C22 6.977 17.523 2.5 12 2.5Z" fill="#5c5c5c"></path></svg></a><a class="p-2" href="https://www.tiktok.com/@bankffin.kz?_d=secCgYIASAHKAESPgo8yEEHeluxBl8xQIn2jkt73RwH4aEmS1sBylYYKHHXdO%2FpJD5Unk1Y6ySplmX8fgIau3EbRWKAvSuk4Jy7GgA%3D&amp;_r=1&amp;language=ru&amp;sec_uid=MS4wLjABAAAAqiW2M57HqTThoYDf_ElCCQE2ec1xnISFiwgt30HlHyLKFzMyC8ZjjWxrP8kGzmEa&amp;sec_user_id=MS4wLjABAAAAqiW2M57HqTThoYDf_ElCCQE2ec1xnISFiwgt30HlHyLKFzMyC8ZjjWxrP8kGzmEa&amp;share_app_id=1233&amp;share_author_id=7008486303806505985&amp;share_link_id=32981fb4-55b4-4ba3-ae85-a1e8d14081da&amp;source=h5_m&amp;timestamp=1654773109&amp;u_code=dkidhhb95f1c26&amp;ugbiz_name=Account&amp;user_id=7008486303806505985&amp;utm_campaign=client_share&amp;utm_medium=android&amp;utm_source=copy"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.1162 3.33859H16.1183C16.0293 2.8301 16.0693 2.5 16.0693 2.5H12.5046V15.7999C12.5046 16.2599 12.5047 16.7055 12.3441 17.1482C12.0843 17.8663 11.5288 18.5144 10.79 18.802C9.81324 19.1818 9.0246 19.19 8.1438 18.7355L8.14142 18.7324C8.02238 18.671 7.90105 18.6007 7.77742 18.5215C6.71771 17.8012 6.52452 16.7213 6.52969 15.9582C6.6536 14.9212 7.07439 14.3406 7.86735 13.7454C9.0015 12.941 10.4188 13.3953 10.4188 13.3953V10.6904L10.4209 10.6904V9.91934C9.75566 9.82642 9.07939 9.83612 8.41724 9.94809C7.97788 10.0248 7.5483 10.147 7.13595 10.3128C6.47485 10.5599 5.86092 10.912 5.31941 11.3548C4.70534 11.8687 4.18822 12.4822 3.79115 13.1678C3.64099 13.4187 3.07306 14.4203 3.00378 16.052C2.96377 16.9781 3.25118 17.9334 3.388 18.3306V18.3385C3.39305 18.352 3.39893 18.3673 3.40562 18.3844C3.51547 18.6642 3.84406 19.4056 4.35779 20.0386C4.79796 20.5774 5.3182 21.0499 5.90155 21.4407C5.71948 21.2625 5.5481 21.0744 5.38825 20.8772C4.83796 20.197 4.50193 19.3951 4.41588 19.1684L4.41584 19.1657C4.5013 19.3961 4.83841 20.1964 5.38779 20.8734C5.54764 21.0706 5.71902 21.2587 5.90108 21.4369L5.90969 21.4432C7.63415 22.5756 9.54964 22.4989 9.54964 22.4989C9.57717 22.4977 9.61005 22.4967 9.64793 22.4955C10.0664 22.4827 11.0944 22.4511 12.2516 21.9229C13.6517 21.2844 14.4459 20.3362 14.4459 20.3362C14.4519 20.329 14.4593 20.3204 14.4679 20.3105C14.4735 20.304 14.4796 20.2969 14.4863 20.2892C14.6725 20.0741 15.2537 19.4028 15.6416 18.4223C15.9656 17.6058 16.0719 16.6259 16.0719 16.2337V9.18907C16.1183 9.21491 16.6927 9.57961 16.6927 9.57961C16.6927 9.57961 17.5253 10.091 18.8199 10.4244C19.7475 10.6628 21 10.7124 21 10.7124V8.04039L21 7.30144C20.5598 7.34604 19.6671 7.21517 18.7605 6.7767C18.6195 6.70839 18.4827 6.63213 18.3509 6.5483C18.4645 6.66709 19.0453 7.25435 19.791 7.61487C20.1656 7.79613 20.5599 7.93624 20.9666 8.03262C20.5592 7.93638 20.1642 7.79626 19.7888 7.61485C19.0432 7.25432 18.4624 6.66706 18.3488 6.54828C17.9642 6.30381 17.6116 6.01524 17.2985 5.68885C16.5181 4.82444 16.2229 3.95169 16.1162 3.33859ZM9.89347 19.8451C9.54146 19.7603 9.18704 19.6007 8.81045 19.3597C8.66772 19.2645 8.53454 19.1569 8.41249 19.0386C8.53387 19.1568 8.66632 19.2643 8.80831 19.3596C9.18572 19.6011 9.54082 19.7607 9.89347 19.8451Z" fill="#5c5c5c"></path><path d="M3.44968 18.5051L3.40658 18.387C3.42291 18.433 3.43589 18.4679 3.44418 18.4903L3.44968 18.5051Z" fill="#5c5c5c"></path></svg></a></div></nav></section><section class="flex justify-end text-xs text-[#939393] border-t"><p class="mt-5 pr-2">© 2024, АО «ФРИДОМ БАНК КАЗАХСТАН». ЛИЦЕНЗИЯ АРРФР №1.2.108/43/250 ОТ 01.02.2023</p></section></footer></div></div>
+  <script type="module" src="./Процесс по открытию предоплаченных карт_files/main.jsx"></script>
+
+
+</body></html>

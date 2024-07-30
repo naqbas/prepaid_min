@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body,
+#root,
+#root header,
+#root main,
+#root footer {
+    width: 100%;
+}
+
+
+.activeTab {
+    background-color: #2a8640 !important;
+    color: #fff !important;
+}
+
+.answer {
+    display: block;
+}
+
+.svgRotate {
+    transform: rotate(180deg);
+}
+
+.question svg {
+    transition: transform 0.5s;
+}
+
+.lightButton {
+    background-color: #2a8640;
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    html {
+        font-size: 8px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 24px;
+    }
+}
