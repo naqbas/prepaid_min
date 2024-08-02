@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 
 function Conditions() {
-    const [t, i18n] = useTranslation("landing");
+    const [t] = useTranslation("landing");
 
     return (
         <section className="px-5 my-[100px] dark:text-white">

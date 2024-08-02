@@ -6,7 +6,7 @@ import QuestionsProblem from "../../components/ui/QuestionsProblem.jsx";
 
 
 function Questions() {
-    const [t, i18n] = useTranslation("landing");
+    const [t] = useTranslation("landing");
     function changeQuestionsTabs(title) {
         const open = document.querySelector("#open");
         const use = document.querySelector("#use");
