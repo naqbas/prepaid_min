@@ -1,9 +1,8 @@
 import banner from "../../assets/banner.webp";
 import BannerBenefit from "../../components/ui/BannerBenefit.jsx";
 import { useTranslation } from "react-i18next";
-import applepayIcon from "../../assets/applepayIcon.svg";
-import googlepayIcon from "../../assets/googlepayIcon.svg";
-import samsungpayIcon from "../../assets/samsungpayIcon.svg";
+import PayOptions from "../../components/ui/PayOptions.jsx";
+
 
 
 function Banner() {
@@ -21,23 +20,7 @@ function Banner() {
                             <BannerBenefit benefit={t("banner.subtitle.benefit3")} />
                         </div>
                     </div>
-                    <div className="flex gap-1 sm:justify-center">
-                        <a href="https://bankffin.kz/ru/page/kak-podkliucit-kartu-k-apple-pay-na-smartfone" target="_blank" rel="noreferrer">
-                            <div className="px-3 py-2 bg-white rounded-lg">
-                                <img src={applepayIcon} alt="Apple Pay" />
-                            </div>
-                        </a>
-                        <a href="https://bankffin.kz/ru/page/kak-podkliucit-kartu-k-google-pay-na-smartfone" target="_blank" rel="noreferrer">
-                            <div className="px-3 py-2 bg-white rounded-lg">
-                                <img src={googlepayIcon} alt="Google Pay" />
-                            </div>
-                        </a>
-                        <a href="https://bankffin.kz/ru/page/kak-podkliucit-kartu-k-samsung-pay-na-smartfone" target="_blank" rel="noreferrer">
-                            <div className="px-3 py-2 bg-white rounded-lg">
-                                <img src={samsungpayIcon} alt="Samsung Pay" />
-                            </div>
-                        </a>
-                    </div>
+                    <PayOptions />
                     <button className="sm:mx-auto py-4 px-6 w-52 rounded-2xl bg-[#2a8640] text-white">{t("banner.button")}</button>
                 </div>
                 <div className="flex flex-col justify-end w-1/3 sm:w-full">

@@ -3,8 +3,9 @@ import dropdownIcon from "../../assets/dropdownIcon.svg";
 
 
 
-function QuestionsLegal() {
+function QuestionsLegal({question}) {
     const [t] = useTranslation("landing");
+    
 
     function toggleAnswer(event) {
         event.target.closest(".question").nextElementSibling.classList.toggle("answer");
